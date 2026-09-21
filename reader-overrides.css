@@ -65,6 +65,17 @@
   display: none;
 }
 
+/* Lessons begin with the concept itself, not repeated navigation metadata. */
+.lesson > .lede,
+.lesson > .meta,
+.lesson > .eyebrow {
+  display: none;
+}
+
+.lesson > h1 {
+  margin-bottom: 28px;
+}
+
 @media (max-width: 820px) {
   .sidebar {
     width: min(300px, calc(100vw - 42px));
