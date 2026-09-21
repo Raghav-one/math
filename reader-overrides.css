@@ -21,3 +21,52 @@
   font-weight: 650;
   letter-spacing: .075em;
 }
+
+/* Bring the Math sidebar closer to the compact Rust navigation treatment. */
+.sidebar {
+  width: 280px;
+  flex-basis: 280px;
+  padding: 20px 16px 28px;
+}
+
+.sub {
+  margin: 7px 0 16px 39px;
+}
+
+.phase {
+  border-bottom: 0;
+  margin-bottom: 14px;
+  padding-bottom: 0;
+}
+
+.phase-label {
+  margin: 0 5px 6px;
+}
+
+.lesson-link {
+  align-items: baseline;
+  border-radius: 6px;
+  font-size: .85rem;
+  gap: 8px;
+  padding: 7px 8px;
+  white-space: nowrap;
+}
+
+.lesson-link > span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lesson-link.active {
+  background: #e6edfc;
+}
+
+.sidebar-foot {
+  display: none;
+}
+
+@media (max-width: 820px) {
+  .sidebar {
+    width: min(300px, calc(100vw - 42px));
+  }
+}
