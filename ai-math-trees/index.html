@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbfbfa">
+  <meta name="description" content="A visual dependency map of the mathematics required to understand AI.">
+  <title>AI Mathematics · Tree Maps</title>
+  <link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/math/" aria-label="Math for AI home"><span class="brand-mark" aria-hidden="true">∑</span><span>Math for AI <small>Tree maps</small></span></a>
+    <a class="reader-link" href="/math/">Open curriculum <span aria-hidden="true">↗</span></a>
+  </header>
+  <main>
+    <section class="intro">
+      <p class="eyebrow">A dependency map, not a checklist</p>
+      <h1>Mathematics required for AI</h1>
+      <p>Each tree shows what a concept depends on and where it becomes useful in an AI system. Start at the roots. A later branch can be useful before you have mastered every leaf, but the connecting line tells you what to return to when the notation stops making sense.</p>
+      <div class="legend" aria-label="Diagram legend"><span><i class="root"></i>Start here</span><span><i class="core"></i>Core for AI</span><span><i class="advanced"></i>Model-specific depth</span><span><i class="edge"></i>Builds on</span></div>
+    </section>
+    <nav class="tree-nav" id="tree-nav" aria-label="Mathematics maps"></nav>
+    <section class="tree-list" id="tree-list" aria-live="polite"></section>
+    <section class="how-to-read">
+      <h2>How to use the trees</h2>
+      <ol>
+        <li>Choose the tree nearest to the AI question you are trying to understand.</li>
+        <li>Follow arrows backward when a term is unfamiliar; those are the prerequisites.</li>
+        <li>Use the green nodes first. The warmer nodes are valuable for specific architectures, not universal starting points.</li>
+      </ol>
+    </section>
+  </main>
+  <script src="diagrams/tree-data.js?v=1"></script>
+  <script src="diagrams/render-trees.js?v=1"></script>
+  <script src="app.js?v=1"></script>
+</body>
+</html>
